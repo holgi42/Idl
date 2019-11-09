@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Config>
 
-  <Datenbank>jdbc:oracle:thin:idl2/idl2@inf-ssd-db-prod.spanset.local:1521:prod</Datenbank>
+  <Datenbank>jdbc:oracle:thin:scott/tiger@inf-ssd-db-prod.spanset.local:1521:prod</Datenbank>
   <Ausgabe>/home/idl/erg/aktuell</Ausgabe>
 
   <Bereich Art="Basis">
