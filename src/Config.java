@@ -11,14 +11,17 @@ public class Config {
 	public Config(CmdLine cmd) {
 		int iArt=0;
 		try {
-			confDatei=cmd.getS("-conf","/home/idl/config/Config.xml");
+			/* Regeln für Confdatei: Parameter -conf hat höchste Prio. Dann kommt Environment, dann kommt "Config.xml" */
+			confDatei=env("IDLConfig","Config.xml");
+			confDatei=cmd.getS("-conf",confDatei);
+			
 			Document doc=null;
 			doc=new SAXBuilder().build(confDatei);
 			Element x=doc.getRootElement();
 			if (x==null) idl.prex("Xml-File \""+confDatei+"\" opened but no root element found. This is strange!",-4);
 			if(!x.getName().equals("Config")) idl.prex("\""+confDatei+"\" is no config file.",-4);
-			dbConn=x.getChildText("Datenbank");
-			zielVerz=x.getChildText("Ausgabe");
+			dbConn=env("IDLDatenbank",x.getChildText("Datenbank"));
+			zielVerz=env("IDLAusgabe",x.getChildText("Ausgabe"));
 			
 			List<Element> b;
 			b=x.getChildren("Bereich");
@@ -35,6 +38,7 @@ public class Config {
 				for (Element t:lt) tabs.add(new Tabelle(iArt,t));
 			}
 		} catch(Exception e) {e.printStackTrace(); idl.prex("Fehler beim Lesen der Config",-4);}
+		
 	}
 	
 	Tabelle sucheTab(int id) {
@@ -44,5 +48,10 @@ public class Config {
 		}
 		idl.prex("Eine Tabelle mit der id "+id+" existiert nicht",-2);
 		return null;
+	}
+	
+	protected String env(String was,String ersetz) {
+		String h=System.getenv(was);
+		if (h==null) return ersetz; else return h;
 	}
 }

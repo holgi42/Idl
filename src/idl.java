@@ -25,7 +25,7 @@ public class idl {
 			switch(cmd.getS(0)) {
 			case "hilfe": tuHilfe(); break;
 			case "show": tuZeige(cmd); break;
-			default: prex("Unbekannter Befehl; rufe auf \"idl hilfe\" für hilfe",-1);
+			default: prex("Unbekannter Befehl; rufe bitte \"idl hilfe\" für hilfe",-1);
 			}
 			ora.close();
 		} catch(Exception e) {e.printStackTrace(); System.exit(-2);}

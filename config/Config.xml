@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+
+  <Datenbank>jdbc:oracle:thin:idl2/idl2@inf-ssd-db-prod.spanset.local:1521:prod</Datenbank>
+  <Ausgabe>/home/idl/erg/aktuell</Ausgabe>
+
+  <Bereich Art="Basis">
+
+    <Tabelle Id="1">
+      <Name>Customer</Name>
+      <Dateiname>Customer.txt</Dateiname>
+      <Bauen>Basis.BaueCustomer</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Kundenstamm</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Immer Total</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Kundennummer. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Customer</Anker>
+        <Bemerkung>Kurztext zum Kunden</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="2">
+      <Name>Distribution</Name>
+      <Dateiname>Distribution.txt</Dateiname>
+      <Bauen>Basis.BaueDistribution</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Prinzipiell die Profitcenter</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Nr des profitcenter. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Products</Anker>
+        <Bemerkung>Englische Beschreibung des Profitcenters</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="3">
+      <Name>Markstsegmente</Name>
+      <Dateiname>MarketSegs.txt</Dateiname>
+      <Bauen>Basis.BauemarketSegs</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Noch mal genau nachschauen</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Products</Anker>
+        <Bemerkung>Englische Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="5">
+      <Name>Products</Name>
+      <Dateiname>Products.txt</Dateiname>
+      <Bauen>Basis.BaueProducts</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Der Artikelstamm eingeordnet in die Produktgruppenkategorien</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Products</Anker>
+        <Bemerkung>Kurztext oder Miscodekennung der Artikelgruppe</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Anker>Unit</Anker>
+        <Bemerkung>Lagerführungseinheit des Artikels</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Anker>Pim</Anker>
+        <Bemerkung>Neu: Pim-Nummer des Artikels</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+
+    <Tabelle Id="7">
+      <Name>Regions</Name>
+      <Dateiname>Regions.txt</Dateiname>
+      <Bauen>Basis.BaueRegions</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Erdteile, Länder, Plz-Regionen Deutschlands</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Products</Anker>
+        <Bemerkung>Name der Region, des Landes oder der Postleitzahlenregion</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+  
+    <Tabelle Id="8">
+      <Name>Lieferanten</Name>
+      <Dateiname>Supplier.txt</Dateiname>
+      <Bauen>Einkauf.BaueSupplier</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Lieferantenstammdaten Einkauf</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Lieferantennummer. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Supplier</Anker>
+        <Bemerkung>Kurztext des Liefernaten. Englische Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="9">
+      <Name>ABC-Kriterienn</Name>
+      <Dateiname>ABC_Supplier_Criteria.txt</Dateiname>
+      <Bauen>Einkauf.BaueAbc</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Eigentlich unnötig, hier gibt es nur A,B,C und _ns</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Lieferantennummer. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Supplier</Anker>
+        <Bemerkung>Englische Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+
+    <Tabelle Id="10">
+      <Name>Bestandskonten</Name>
+      <Dateiname>Stocking_Category.txt</Dateiname>
+      <Bauen>Einkauf.BaueBestandskonten</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Bestandskonten. Genauer beschreiben</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Lieferantennummer. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Category</Anker>
+        <Bemerkung>Englische Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+
+    <Tabelle Id="11">
+      <Name>Mengeneinheiten</Name>
+      <Dateiname>Units.txt</Dateiname>
+      <Bauen>Basis.BaueEinheiten</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Mengeneinheiten</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Kürzel. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Supplier</Anker>
+        <Bemerkung>Englische Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Anker>Total Einheiten</Anker>
+        <Bemerkung>Deutsche Beschreibung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="12">
+      <Name>Measurements</Name>
+      <Dateiname>Measures.txt</Dateiname>
+      <Bauen>Basis.BaueMeasures</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Die einzelnen zur Verfügung stehenden Measurements</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Kürzel. Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Measures</Anker>
+        <Bemerkung>Beschreibung auf Englisch</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Anker>Deutsche Beschreibung</Anker>
+        <Bemerkung>Beschreibung auf Deutsch</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Anker>Zusatzinfo</Anker>
+        <Bemerkung>Zusatzinfo zur Berechnung etc.</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+    <Tabelle Id="13">
+      <Name>Suffixe</Name>
+      <Dateiname>Source.txt</Dateiname>
+      <Bauen>Basis.BaueSuffixe</Bauen>
+      <KopfConfig/>
+      <Bemerkung>Artikelsuffixe: Du,HU,X,_ns</Bemerkung>
+      <Feld>
+        <Sql>w0</Sql>
+        <Ueber>Parent</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Übergeordnete Gruppe oder Total bei Stammelement</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w1</Sql>
+        <Ueber>Child</Ueber>
+        <Anker>Total</Anker>
+        <Bemerkung>Der Primärschlüssel des Elementes</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w2</Sql>
+        <Ueber>Weight</Ueber>
+        <Anker>1</Anker>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w3</Sql>
+        <Ueber>DESC_EN</Ueber>
+        <Anker>Total Source</Anker>
+        <Bemerkung>Bedeutung</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w4</Sql>
+        <Ueber>Attribute_1</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w5</Sql>
+        <Ueber>Attribute_2</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w6</Sql>
+        <Ueber>Attribute_3</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w7</Sql>
+        <Ueber>Attribute_4</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w8</Sql>
+        <Ueber>Attribute_5</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+      <Feld>
+        <Sql>w9</Sql>
+        <Ueber>Attribute_6</Ueber>
+        <Bemerkung>Wird nicht benötigt</Bemerkung>
+      </Feld>
+    </Tabelle>
+    
+  </Bereich>
+
+</Config>
